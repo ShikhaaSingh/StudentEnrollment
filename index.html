@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Student Enrollment</title>
+  <link rel="stylesheet" type="text/css" href="css/custom.css">
+</head>
+<body>
+  <nav class="navbar">
+    <div class="navbar-brand">Student Enrollment</div>
+    <ul class="navbar-links">
+      <li><a href="#">Home</a></li>
+      <li><a href="#">About</a></li>
+      <li><a href="#">Contact</a></li>
+    </ul>
+  </nav>
+
+  <div class="container">
+    <div class="form-container">
+      <h2>Student Enrollment Form</h2>
+      <form id="enrollmentForm">
+        <label for="name">Name:</label>
+        <input type="text" id="name" required>
+
+        <label for="age">Age:</label>
+        <input type="number" id="age" required>
+
+        <label for="course">Course:</label>
+        <input type="text" id="course" required>
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" required>
+
+        <label for="phone">Phone:</label>
+        <input type="tel" id="phone" required>
+
+        <label for="image">Image:</label>
+        <input type="file" id="image">
+
+        <button type="submit">Enroll</button>
+        <button type="button" onclick="clearForm()">Clear</button>
+      </form>
+    </div>
+
+    <div class="results-container">
+      <div class="results">
+        <h3>Results:</h3>
+        <table id="resultsTable">
+          <thead>
+            <tr>
+              <th>Name</th>
+              <th>Age</th>
+              <th>Course</th>
+              <th>Email</th>
+              <th>Phone</th>
+              <th>Image</th>
+              <th>Remove</th>
+            </tr>
+          </thead>
+          <tbody id="resultsList"></tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="footer">
+    &copy; 2023 Shikha Singh. All rights reserved.
+  </footer>
+  <script src="js/app.js"></script>
+</body>
+</html>
